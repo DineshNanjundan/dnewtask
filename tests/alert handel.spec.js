@@ -1,18 +1,18 @@
-// import {test,expect} from '@playwright/test';
-// test('alert handle',async({page})=>{
-// await page.goto('https://rahulshettyacademy.com/AutomationPractice/');
+import {test,expect} from '@playwright/test';
+test('alert handle',async({page})=>{
+await page.goto('https://rahulshettyacademy.com/AutomationPractice/');
 
-// //alert handle
-// page.on('dialog',async d1=>{
-//   await page.waitForTimeout(2000);
-//   await d1.accept();
-//  })
+//alert handle
+page.on('dialog',async d1=>{
+  await page.waitForTimeout(2000);
+  await d1.accept();
+ })
 
-//  await page.locator('#name').fill("Dinesh");
-//  await page.locator('#alertbtn').click();
-//  await page.pause();
+ await page.locator('#name').fill("Dinesh");
+ await page.locator('#alertbtn').click();
+ await page.pause();
 
-// })
+})
 
 // import {test,expect} from '@playwright/test'
 // test('alert pageXOffset', async({page})=>{
